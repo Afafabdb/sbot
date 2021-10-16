@@ -23,7 +23,7 @@ const Client = require('instagram-private-api').V1;
 const delay = require('delay');
 const chalk = require('chalk');
 const inquirer = require('inquirer');
-
+const keepAlive = require("./server") 
 const questionTools = [
   {
     type:"list",
@@ -138,5 +138,5 @@ console.log(chalk`
                                                        -------       
 }
       `);
-
+keepAlive()
 main()
